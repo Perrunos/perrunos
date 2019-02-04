@@ -1,0 +1,250 @@
+/*
+Font-family: Arial;
+           current color palette vvvvvvvvvvvvvv
+Header background -------------> (68, 98, 122)
+extra brown -------------------> (129,86,55)
+nav rgb(40, 155, 184) ------> #5d907c
+footer rgb(55, 55, 55) --------> #39392f (57, 57, 47)
+
+
+font color rgb(81, 187, 214)
+nav rgb(236, 236, 235)
+Top of header rgb(81, 85, 88)
+
+*/
+:root {
+  --main-color: rgb(40, 155, 184);
+}
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+body{
+  margin: 0;
+  background-color: #fdfdfd;
+}
+.news{
+    background-color: lightgrey;
+    float: right;
+    max-width: 20%;
+    margin-right: 12%;
+    padding: 20px;
+    overflow: auto;
+    border-radius: 10px;
+}
+.op{
+  position: relative;
+  background-color: #000;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -50px;
+}
+header{
+  position: relative;
+  background-color: rgb(135,206,235,.6);
+  overflow: hidden;
+  margin-top: 100px;
+  height: 800px;
+  position: relative;
+  background-image: url(avilawhite.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 280px;
+}
+h1{
+  position: relative;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: black;
+  margin: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+h3{
+  font-weight: bold;
+}
+h3.blue{
+  color: var(--main-color);
+  font-size: 20px;
+}
+h4{
+  font-weight: normal;
+  font-size: 15px;
+}
+a.intext{
+  text-decoration: none;
+  color: var(--main-color);
+}
+.subtitle {
+  color: black;
+  font-style: oblique;
+  font-size: 30px;
+  max-width: 40%;
+  padding-bottom: 30px;
+  overflow: auto;
+  padding-top: 0;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.intro {
+  text-align: justify;
+}
+nav.nav {
+  font-family: 'Orbitron', sans-serif;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-top: -100px;
+}
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:  rgb(255, 241, 208);
+    display: flex;
+    justify-content: center;
+}
+li.nav {
+    float: left;
+}
+/* add / between nav
+nav a::before {
+    content: "/";
+    padding: 0 1rem;
+}
+nav a::before {
+  content: ''; */
+li.nav a {
+    display: block;
+    color: #39392f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+li.nav a:hover:not(.active) {
+    background-color: #111;
+    color: white;
+}
+ul.containerfooter{
+  padding: 20px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  width: 97%;
+}
+li.footer{
+  text-decoration: none;
+  list-style-type: none;
+  float: left;
+}
+a.footer {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    list-style-type: none;
+}
+a.firstfooter {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+a.footer::before {
+    content: "/";
+    padding: 0 1rem;
+}
+footer{
+background-color: rgb(55,55,55);
+padding-top: 70px;
+padding-bottom: 40px;
+text-align: center;
+}
+p.footertext{
+  max-width: 100%;
+  color: white;
+}
+p.footertexttwo{
+  max-width: 100%;
+  color: white;
+  padding-top: 40px;
+}
+main{
+  max-width: 50%;
+  margin-left: 10%;
+  justify-content: flex-start;
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10%;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+p{
+  font-size: 15px;
+}
+h4.comment{
+  font-size: 22px;
+  color: var(--main-color);
+  padding: 30px 0;
+}
+a.aside{
+  text-decoration: none;
+  color: var(--main-color);
+}
+a.aside:hover:not(.active) {
+    background-color: #111;
+    color: white;
+}
+img.tango{
+  width: 20vw;
+}
+img.logo{
+  width: 20vw;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+img.header{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 25%;
+}
+/* ARROW----------------------------------------------------- */
+body { background: @bg;}
+a.fa {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.arrow {
+  text-align: center;
+  margin: 15% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
