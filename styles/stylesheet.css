@@ -21,7 +21,7 @@ Top of header rgb(81, 85, 88)
 }
 body{
   margin: 0;
-  background-color: #fdfdfd;
+  background-color: #ffffff;
 }
 .news{
     background-color: lightgrey;
@@ -31,6 +31,7 @@ body{
     padding: 20px;
     overflow: auto;
     border-radius: 10px;
+    margin-top: 50px;
 }
 .op{
   position: relative;
@@ -47,7 +48,7 @@ header{
   margin-top: 100px;
   height: 800px;
   position: relative;
-  background-image: url(avilawhite.png);
+  background-image: url(avilawhite2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 280px;
@@ -161,7 +162,7 @@ a.footer::before {
     padding: 0 1rem;
 }
 footer{
-background-color: rgb(55,55,55);
+background-color: #383838;
 padding-top: 70px;
 padding-bottom: 40px;
 text-align: center;
@@ -184,6 +185,7 @@ main{
   margin-bottom: 10%;
   background-color: lightgrey;
   border-radius: 10px;
+  margin-top: 50px;
 }
 p{
   font-size: 15px;
@@ -216,6 +218,17 @@ img.header{
   margin-right: auto;
   margin-top: 30px;
   width: 25%;
+}
+.trans{
+  width: 50vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: -45px;
+  z-index: -10;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* ARROW----------------------------------------------------- */
 body { background: @bg;}
