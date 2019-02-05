@@ -34,6 +34,17 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+main.acerca{
+  max-width: 50%;
+  margin-left: 10%;
+  justify-content: flex-start;
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10%;
+  background-color: lightgrey;
+  border-radius: 10px;
+  margin-top: 50px;
+}
 .op{
   position: relative;
   background-color: #000;
@@ -65,18 +76,19 @@ h1{
 }
 h3{
   font-weight: bold;
+  font-size: 1.25rem;
 }
 h3.blue{
   color: var(--main-color);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 h3.white{
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 h4{
   font-weight: normal;
-  font-size: 15px;
+  font-size:0.9rem;
 }
 a.intext{
   text-decoration: none;
@@ -85,7 +97,7 @@ a.intext{
 .subtitle {
   color: black;
   font-style: oblique;
-  font-size: 30px;
+  font-size: 1.875rem;
   max-width: 40%;
   padding-bottom: 30px;
   overflow: auto;
@@ -181,7 +193,7 @@ p.footertexttwo{
   color: white;
   padding-top: 40px;
 }
-.acerca{
+div.acerca{
   padding-bottom: 200px;
   background-image: url(avilablue.png);
   background-repeat: no-repeat;
@@ -267,17 +279,6 @@ article.productosbarf{
   border: 10px #aadc65 solid;
   border-radius: 10px;
 }
-main.acerca{
-  max-width: 50%;
-  margin-left: 10%;
-  justify-content: flex-start;
-  padding: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 10%;
-  /* background-color: lightgrey; */
-  border-radius: 10px;
-  margin-top: 50px;
-}
 main.productos{
   max-width: 100%;
   margin-left: 10%;
@@ -288,7 +289,7 @@ main.productos{
   margin-bottom: 0px;
 }
 p{
-  font-size: 15px;
+  font-size: 0.9rem;
 }
 h4.comment{
   font-size: 22px;
