@@ -32,6 +32,7 @@ body{
     overflow: auto;
     border-radius: 10px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .op{
   position: relative;
@@ -67,6 +68,10 @@ h3{
 }
 h3.blue{
   color: var(--main-color);
+  font-size: 20px;
+}
+h3.white{
+  color: white;
   font-size: 20px;
 }
 h4{
@@ -176,16 +181,111 @@ p.footertexttwo{
   color: white;
   padding-top: 40px;
 }
-main{
+.acerca{
+  padding-bottom: 200px;
+  background-image: url(avilablue.png);
+  background-repeat: no-repeat;
+  background-size: right;
+  background-position: 0 500px;
+  margin-bottom: 0px;
+}
+div.productos{
+  background-color: #6796a6;
+  margin-top: 0;
+  padding-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+img.pollo{
+  float: right;
+  height: 18vw;
+  width: 12vw;
+  object-fit: cover;
+  margin: 60px 50px 50px 50px;
+  padding: 10px;
+  border-radius: 10%;
+}
+img.casera{
+  float: right;
+  height: 18vw;
+  width: 12vw;
+  object-fit: cover;
+  margin: 90px 50px 50px 50px;
+  padding: 10px;
+  border-radius: 10%;
+}
+img.carne{
+  float: right;
+  height: 18vw;
+  width: 12vw;
+  object-fit: cover;
+  margin: 75px 50px 50px 50px;
+  padding: 10px;
+  border-radius: 10%;
+}
+p.productos{
+  font-size: 18px;
+}
+h2.productos{
+  color: #383838;
+  font-size: 34px;
+  text-align: center;
+}
+h3.productos{
+  color: white;
+  font-size: 24px;
+}
+article.productospollo{
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 2%;
+  background-color: lightgrey;
+  border: 10px #006ab0 solid;
+  border-radius: 10px;
+}
+article.productoscasera{
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 2%;
+  background-color: lightgrey;
+  border: 10px #ab629d solid;
+  border-radius: 10px;
+}
+article.productospremium{
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 2%;
+  background-color: lightgrey;
+  border: 10px #ffc365 solid;
+  border-radius: 10px;
+}
+article.productosbarf{
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 2%;
+  background-color: lightgrey;
+  border: 10px #aadc65 solid;
+  border-radius: 10px;
+}
+main.acerca{
   max-width: 50%;
   margin-left: 10%;
   justify-content: flex-start;
   padding: 20px;
   padding-bottom: 20px;
   margin-bottom: 10%;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   border-radius: 10px;
   margin-top: 50px;
+}
+main.productos{
+  max-width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: flex-start;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 p{
   font-size: 15px;
@@ -219,13 +319,18 @@ img.header{
   margin-top: 30px;
   width: 25%;
 }
-.trans{
+div.trans{
+  background-color: rgb(103,150,166);
+  width: auto;
+  margin-top:  0;
+  padding-top: 0;
+}
+img.trans{
   width: 50vw;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   position: relative;
-  bottom: -45px;
-  z-index: -10;
+  bottom: -40px;
   display: block;
   margin-left: auto;
   margin-right: auto;
