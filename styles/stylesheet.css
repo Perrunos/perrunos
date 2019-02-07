@@ -28,22 +28,25 @@ body{
     float: right;
     max-width: 20%;
     margin-right: 12%;
-    padding: 20px;
+    padding:  1.25rem;
     overflow: auto;
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    border-radius: 0.625rem;
+    margin-top:  3.125rem;
+    margin-bottom:  3.125rem;
 }
 main.acerca{
   max-width: 50%;
+  max-height: 50rem;
   margin-left: 10%;
   justify-content: flex-start;
-  padding: 20px;
-  padding-bottom: 20px;
+  padding:  1.25rem;
+  padding-bottom:  1.25rem;
   margin-bottom: 10%;
-  /* background-color: lightgrey; */
-  border-radius: 10px;
-  margin-top: 50px;
+  margin-right: 10%;
+  overflow: auto;
+  background-color: lightgrey;
+  border-radius: 0.625rem;
+  margin-top:  3.125rem;
 }
 .op{
   position: relative;
@@ -51,24 +54,24 @@ main.acerca{
   background-image: url(background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -50px;
+  background-position: 0 - 3.125rem;
 }
 header{
   position: relative;
   background-color: rgb(135,206,235,.6);
   overflow: hidden;
-  margin-top: 100px;
-  height: 800px;
+  margin-top: 6.25rem;
+  height: 50rem;
   position: relative;
   background-image: url(avilawhite2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 280px;
+  background-position: 0  17.5rem;
 }
 h1{
   position: relative;
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 3.75rem;
   color: black;
   margin: 0;
   padding-bottom: 0;
@@ -93,13 +96,14 @@ h4{
 a.intext{
   text-decoration: none;
   color: var(--main-color);
+  font-size:  1.125rem;
 }
 .subtitle {
   color: black;
   font-style: oblique;
   font-size: 1.875rem;
   max-width: 40%;
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
   overflow: auto;
   padding-top: 0;
   margin-top: 0px;
@@ -107,16 +111,13 @@ a.intext{
   margin-right: auto;
   text-align: center;
 }
-.intro {
-  text-align: justify;
-}
 nav.nav {
   font-family: 'Orbitron', sans-serif;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
-  margin-top: -100px;
+  margin-top: -6.25rem;
 }
 ul.nav {
     list-style-type: none;
@@ -141,7 +142,7 @@ li.nav a {
     display: block;
     color: #39392f;
     text-align: center;
-    padding: 14px 16px;
+    padding:  0.875rem 1rem;
     text-decoration: none;
     font-weight: bold;
 }
@@ -150,8 +151,8 @@ li.nav a:hover:not(.active) {
     color: white;
 }
 ul.containerfooter{
-  padding: 20px;
-  font-size: 15px;
+  padding:  1.25rem;
+  font-size: 0.9375rem;
   display: flex;
   justify-content: center;
   width: 97%;
@@ -180,8 +181,8 @@ a.footer::before {
 }
 footer{
 background-color: #383838;
-padding-top: 70px;
-padding-bottom: 40px;
+padding-top: 4.375rem;
+padding-bottom: 2.5rem;
 text-align: center;
 }
 p.footertext{
@@ -191,110 +192,107 @@ p.footertext{
 p.footertexttwo{
   max-width: 100%;
   color: white;
-  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 div.acerca{
-  padding-bottom: 200px;
+  padding-bottom: 12.5rem;
   background-image: url(avilablue.png);
   background-repeat: no-repeat;
   background-size: right;
-  background-position: 0 500px;
+  background-position: 0 31.25rem;
   margin-bottom: 0px;
+  position: relative;
 }
 div.productos{
   background-color: #6796a6;
   margin-top: 0;
-  padding-top: 10px;
+  padding-top: 0.625rem;
   margin-bottom: 0;
   padding-bottom: 0;
-}
-img.pollo{
-  float: right;
-  height: 18vw;
-  width: 12vw;
-  object-fit: cover;
-  margin: 60px 50px 50px 50px;
-  padding: 10px;
-  border-radius: 10%;
-}
-img.casera{
-  float: right;
-  height: 18vw;
-  width: 12vw;
-  object-fit: cover;
-  margin: 90px 50px 50px 50px;
-  padding: 10px;
-  border-radius: 10%;
+  position: relative;
+
 }
 img.carne{
-  float: right;
-  height: 18vw;
-  width: 12vw;
+  padding-top: auto;
+  margin: 0;
+  height: 16.56rem;
+  width: 100%;
   object-fit: cover;
-  margin: 75px 50px 50px 50px;
-  padding: 10px;
-  border-radius: 10%;
+  position: absolute;
+  bottom: 0;
 }
 p.productos{
-  font-size: 18px;
+  font-size: 1.125rem;
+  padding:  1.25rem;
 }
 h2.productos{
   color: #383838;
-  font-size: 34px;
+  font-size: 2.125rem;
   text-align: center;
 }
 h3.productos{
-  color: white;
-  font-size: 24px;
+  color: var(--main-color);
+  font-size: 1.5rem;
+  padding-left:  1.25rem;
 }
 article.productospollo{
-  padding: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 2%;
+  width: 45%;
+  height: 53.13rem;
+  padding-bottom: 0;
+  margin:0 0 5% 0;
   background-color: lightgrey;
-  border: 10px #006ab0 solid;
-  border-radius: 10px;
+  border: 0.625rem #006ab0 solid;
+  border-radius: 0.625rem;
+  position: relative
 }
 article.productoscasera{
-  padding: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 2%;
+  width: 45%;
+  height: 53.13rem;
+  padding-bottom: 0;
+  margin:0 0 5% 0;
   background-color: lightgrey;
-  border: 10px #ab629d solid;
-  border-radius: 10px;
+  border: 0.625rem #ab629d solid;
+  border-radius: 0.625rem;
+  position: relative
 }
 article.productospremium{
-  padding: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 2%;
+  width: 45%;
+  height: 53.13rem;
+  padding-bottom: 0;
+  margin:0 0 5% 0;
   background-color: lightgrey;
-  border: 10px #ffc365 solid;
-  border-radius: 10px;
+  border: 0.625rem #ffc365 solid;
+  border-radius: 0.625rem;
+  position: relative
 }
 article.productosbarf{
-  padding: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 2%;
+  width: 45%;
+  height: 53.13rem;
+  padding-bottom: 0;
+  margin:0 0 5% 0;
   background-color: lightgrey;
-  border: 10px #aadc65 solid;
-  border-radius: 10px;
+  border: 0.625rem #aadc65 solid;
+  border-radius: 0.625rem;
+  position: relative
 }
 main.productos{
   max-width: 100%;
   margin-left: 10%;
   margin-right: 10%;
-  justify-content: flex-start;
-  padding: 20px;
-  margin-top: 50px;
+  padding:  1.25rem;
+  margin-top:  3.125rem;
   margin-bottom: 0px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
 }
 p{
   font-size: 0.9rem;
 }
 h4.comment{
-  font-size: 22px;
+  font-size: 1.375rem;
   color: var(--main-color);
-  padding: 30px 0;
+  padding: 1.875rem 0;
 }
 a.aside{
   text-decoration: none;
@@ -317,7 +315,7 @@ img.header{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 1.875rem;
   width: 25%;
 }
 div.trans{
@@ -331,7 +329,7 @@ img.trans{
   margin: 0px;
   padding: 0px;
   position: relative;
-  bottom: -40px;
+  bottom: -2.5rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -341,9 +339,9 @@ body { background: @bg;}
 a.fa {
   color: black;
   text-decoration: none;
-  font-size: 30px;
-  padding: 10px;
-  border-radius: 100px;
+  font-size: 1.875rem;
+  padding: 0.625rem;
+  border-radius: 6.25rem;
 }
 
 .arrow {
@@ -361,9 +359,9 @@ a.fa {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-1.875rem);
   }
   60% {
-    transform: translateY(-15px);
+    transform: translateY(-0.9375rem);
   }
 }
