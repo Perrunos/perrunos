@@ -226,7 +226,7 @@ main.productos{
 }
 article.productospollo{
   width: 45%;
-  height: 53.13rem;
+  height6rem;
   padding-bottom: 0;
   margin:0 0 5% 0;
   background-color: lightgrey;
@@ -236,7 +236,7 @@ article.productospollo{
 }
 article.productoscasera{
   width: 45%;
-  height: 53.13rem;
+  height: 56rem;
   padding-bottom: 0;
   margin:0 0 5% 0;
   background-color: lightgrey;
@@ -246,7 +246,7 @@ article.productoscasera{
 }
 article.productospremium{
   width: 45%;
-  height: 53.13rem;
+  height: 56rem;
   padding-bottom: 0;
   margin:0 0 5% 0;
   background-color: lightgrey;
@@ -256,7 +256,7 @@ article.productospremium{
 }
 article.productosbarf{
   width: 45%;
-  height: 53.13rem;
+  height: 56rem;
   padding-bottom: 0;
   margin:0 0 5% 0;
   background-color: lightgrey;
@@ -272,6 +272,12 @@ img.comida{
   object-fit: cover;
   position: absolute;
   bottom: 0;
+}
+ul.comida{
+  list-style-type: none;
+  text-indent: -3em;
+  margin-left: 1rem;
+  justify-content: center;
 }
 /* SILUETA PERROS--------------------------------------------- */
 div.trans{
@@ -360,4 +366,8 @@ a.fa {
   60% {
     transform: translateY(-0.9375rem);
   }
+}
+.icono{
+  width: 1.25rem;
+  padding: 0 1rem;
 }
