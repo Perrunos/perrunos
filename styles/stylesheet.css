@@ -10,9 +10,8 @@ footer rgb(55, 55, 55) --------> #39392f (57, 57, 47)
 font color rgb(81, 187, 214)
 nav rgb(236, 236, 235)
 Top of header rgb(81, 85, 88)
-
-*/
-:root {
+/* GENERAL------------------------------------------------ */
+*:root {
   --main-color: rgb(40, 155, 184);
 }
 *{
@@ -23,94 +22,18 @@ body{
   margin: 0;
   background-color: #ffffff;
 }
-.news{
-    background-color: lightgrey;
-    float: right;
-    max-width: 20%;
-    margin-right: 12%;
-    padding:  1.25rem;
-    overflow: auto;
-    border-radius: 0.625rem;
-    margin-top:  3.125rem;
-    margin-bottom:  3.125rem;
-}
-main.acerca{
-  max-width: 50%;
-  max-height: 50rem;
-  margin-left: 10%;
-  justify-content: flex-start;
-  padding:  1.25rem;
-  padding-bottom:  1.25rem;
-  margin-bottom: 10%;
-  margin-right: 10%;
-  overflow: auto;
-  /* background-color: lightgrey; */
-  border-radius: 0.625rem;
-  margin-top:  3.125rem;
-}
-.op{
-  position: relative;
-  background-color: #000;
-  background-image: url(background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 - 3.125rem;
-}
-header{
-  position: relative;
-  background-color: rgb(135,206,235,.6);
-  overflow: hidden;
-  margin-top: 6.25rem;
-  height: 50rem;
-  position: relative;
-  background-image: url(avilawhite2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0  17.5rem;
-}
-h1{
-  position: relative;
-  text-transform: uppercase;
-  font-size: 3.75rem;
-  color: black;
-  margin: 0;
-  padding-bottom: 0;
-  text-align: center;
-}
 h3{
   font-weight: bold;
-  font-size: 1.25rem;
-}
-h3.blue{
-  color: var(--main-color);
-  font-size: 1.25rem;
-}
-h3.white{
-  color: white;
   font-size: 1.25rem;
 }
 h4{
   font-weight: normal;
   font-size:0.9rem;
 }
-a.intext{
-  text-decoration: none;
-  color: var(--main-color);
-  font-size:  1.125rem;
+p{
+  font-size: 0.9rem;
 }
-.subtitle {
-  color: black;
-  font-style: oblique;
-  font-size: 1.875rem;
-  max-width: 40%;
-  padding-bottom: 1.875rem;
-  overflow: auto;
-  padding-top: 0;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
+/* NAV BAR ----------------------------------------------- */
 nav.nav {
   font-family: 'Orbitron', sans-serif;
   position: -webkit-sticky;
@@ -150,51 +73,64 @@ li.nav a:hover:not(.active) {
     background-color: #111;
     color: white;
 }
-ul.containerfooter{
-  padding:  1.25rem;
-  font-size: 0.9375rem;
-  display: flex;
-  justify-content: center;
-  width: 97%;
+/* HEADER ------------------------------------------------ */
+header{
+  position: relative;
+  background-color: rgb(135,206,235,.6);
+  overflow: hidden;
+  margin-top: 6.25rem;
+  height: 50rem;
+  position: relative;
+  background-image: url(avilawhite2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0  17.5rem;
 }
-li.footer{
-  text-decoration: none;
-  list-style-type: none;
-  float: left;
+h1{
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3.75rem;
+  color: black;
+  margin: 0;
+  padding-bottom: 0;
+  text-align: center;
 }
-a.footer {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    list-style-type: none;
+.subtitle {
+  color: black;
+  font-style: oblique;
+  font-size: 1.875rem;
+  max-width: 40%;
+  padding-bottom: 1.875rem;
+  overflow: auto;
+  padding-top: 0;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-a.firstfooter {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    list-style-type: none;
+.opaque{
+  position: relative;
+  background-color: #000;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 - 3.125rem;
 }
-
-a.footer::before {
-    content: "/";
-    padding: 0 1rem;
-}
-footer{
-background-color: #383838;
-padding-top: 4.375rem;
-padding-bottom: 2.5rem;
-text-align: center;
-}
-p.footertext{
-  max-width: 100%;
+img.logo{
+  width: 17.5rem;
   color: white;
+  margin: 0;
+  padding: 0;
 }
-p.footertexttwo{
-  max-width: 100%;
-  color: white;
-  padding-top: 2.5rem;
+img.header{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.875rem;
+  width: 25%;
 }
-div.acerca{
+/* ACERCA ------------------------------------------------ */
+div.acercacontainer{
   padding-bottom: 12.5rem;
   background-image: url(avilablue.png);
   background-repeat: no-repeat;
@@ -203,24 +139,58 @@ div.acerca{
   margin-bottom: 0px;
   position: relative;
 }
-div.productos{
-  background-color: #6796a6;
-  margin-top: 0;
-  padding-top: 0.625rem;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  position: relative;
-
+main.acerca{
+  max-width: 50%;
+  max-height: 50rem;
+  margin-left: 10%;
+  justify-content: flex-start;
+  padding:  1.25rem;
+  padding-bottom:  1.25rem;
+  margin-bottom: 10%;
+  margin-right: 10%;
+  overflow: auto;
+  /* background-color: lightgrey; */
+  border-radius: 0.625rem;
+  margin-top:  3.125rem;
 }
-img.carne{
-  padding-top: auto;
-  margin: 0;
-  height: 16.56rem;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-  bottom: 0;
+a.intext{
+  text-decoration: none;
+  color: var(--main-color);
+  font-size:  0.9rem;
 }
+h4.comment{
+  font-size: 1.375rem;
+  color: var(--main-color);
+  padding: 1.875rem 0;
+}
+h3.blue{
+  color: var(--main-color);
+  font-size: 1.25rem;
+}
+/* ASIDE --------------------------------------------------*/
+.news{
+    background-color: lightgrey;
+    float: right;
+    max-width: 20%;
+    margin-right: 12%;
+    padding:  1.25rem;
+    overflow: auto;
+    border-radius: 0.625rem;
+    margin-top:  3.125rem;
+    margin-bottom:  3.125rem;
+}
+a.aside{
+  text-decoration: none;
+  color: var(--main-color);
+}
+a.aside:hover:not(.active) {
+    background-color: #111;
+    color: white;
+}
+img.tango{
+  width: 17.5rem;
+}
+/* PRODUCTOS --------------------------------------------- */
 p.productos{
   font-size: 1.125rem;
   padding:  1.25rem;
@@ -234,6 +204,25 @@ h3.productos{
   color: var(--main-color);
   font-size: 1.5rem;
   padding-left:  1.25rem;
+}
+div.productoscontainer{
+  background-color: #6796a6;
+  margin-top: 0;
+  padding-top: 0.625rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+main.productos{
+  max-width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding:  1.25rem;
+  margin-top:  3.125rem;
+  margin-bottom: 0px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
 }
 article.productospollo{
   width: 45%;
@@ -275,49 +264,16 @@ article.productosbarf{
   border-radius: 0.625rem;
   position: relative
 }
-main.productos{
-  max-width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding:  1.25rem;
-  margin-top:  3.125rem;
-  margin-bottom: 0px;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-between;
-}
-p{
-  font-size: 0.9rem;
-}
-h4.comment{
-  font-size: 1.375rem;
-  color: var(--main-color);
-  padding: 1.875rem 0;
-}
-a.aside{
-  text-decoration: none;
-  color: var(--main-color);
-}
-a.aside:hover:not(.active) {
-    background-color: #111;
-    color: white;
-}
-img.tango{
-  width: 20vw;
-}
-img.logo{
-  width: 20vw;
-  color: white;
+img.comida{
+  padding-top: auto;
   margin: 0;
-  padding: 0;
+  height: 16.56rem;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
 }
-img.header{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1.875rem;
-  width: 25%;
-}
+/* SILUETA PERROS--------------------------------------------- */
 div.trans{
   background-color: rgb(103,150,166);
   width: auto;
@@ -334,26 +290,66 @@ img.trans{
   margin-left: auto;
   margin-right: auto;
 }
+/* FOOTER -------------------------------------------------*/
+footer{
+background-color: #383838;
+padding-top: 4.375rem;
+padding-bottom: 2.5rem;
+text-align: center;
+}
+ul.containerfooter{
+  padding:  1.25rem;
+  font-size: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  width: 97%;
+}
+li.footer{
+  text-decoration: none;
+  list-style-type: none;
+  float: left;
+}
+a.footer {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    list-style-type: none;
+}
+a.firstfooter {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    list-style-type: none;
+}
+a.footer::before {
+    content: "/";
+    padding: 0 1rem;
+}
+p.footertext{
+  max-width: 100%;
+  color: white;
+}
+p.footertexttwo{
+  max-width: 100%;
+  color: white;
+  padding-top: 2.5rem;
+}
 /* ARROW----------------------------------------------------- */
 body { background: @bg;}
 a.fa {
   color: black;
   text-decoration: none;
   font-size: 1.875rem;
-  padding: 0.625rem;
-  border-radius: 6.25rem;
 }
-
 .arrow {
   text-align: center;
-  margin: 15% 0;
+  margin: 8rem 0 0 0;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
