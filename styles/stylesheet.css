@@ -44,7 +44,7 @@ main.acerca{
   margin-bottom: 10%;
   margin-right: 10%;
   overflow: auto;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   border-radius: 0.625rem;
   margin-top:  3.125rem;
 }
