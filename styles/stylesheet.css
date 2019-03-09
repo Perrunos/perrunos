@@ -33,6 +33,26 @@ h4{
 p{
   font-size: 0.9rem;
 }
+/* LOADING ------------------------------------------------*/
+#loading{
+  width:300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -150px;
+  z-index: 9999;
+  animation: loading 3s 0s infinite;
+}
+@keyframes loading {
+   from {
+    transform: scaleX(-1);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
 /* NAV BAR ----------------------------------------------- */
 nav.nav {
   font-family: 'Orbitron', sans-serif;
