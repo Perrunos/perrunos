@@ -34,14 +34,14 @@ p{
   font-size: 0.9rem;
 }
 /* LOADING ------------------------------------------------*/
-#loading{
+#loadingimg{
   width:300px;
   height: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-top: -150px;
-  margin-left: -150px;
+  margin-left: -130px;
   z-index: 9999;
   animation: loading 3s 0s infinite;
 }
@@ -52,6 +52,14 @@ p{
   to {
     transform: scaleX(1);
   }
+}
+#loadingtext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 150px;
+  margin-left: -150px;
+  z-index: 9999;
 }
 /* NAV BAR ----------------------------------------------- */
 nav.nav {
