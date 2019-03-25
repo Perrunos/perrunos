@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Pagina Principal</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 </head>
@@ -11,7 +12,7 @@
   <img src="loading.png" alt="logo" id="loadingimg">
   <h1 id="loadingtext">Perruno's</h1>
   </div>
-  <div id="contents">
+  <div id="contents" >
     <nav class="nav">
       <ul class="nav">
         <li class="nav"><a class="first" href="#acerca">Inicio</a></li>
@@ -25,159 +26,40 @@
       <header >
           <img src="images/logo-carita.png" alt="perrunos logo" class="header">
           <h1>Perruno's</h1>
-          <p class="subtitle">"Un alimento sano, equilibrado y económico para cada estilo de mascota"</p>
+          <p class="subtitle">"Dícese del humano que comparte su vida con un canino, y lo hace parte de su familia."</p>
           <div class="arrow bounce">
             <a class="fa fa-arrow-down fa-2x" href="#"></a>
           </div>
       </header>
     </div>
-    <div class="acercacontainer">
-      <aside  class="news">
-        <h3>NOTICIAS PERRUNAS</h3>
-        <article>
-          <h4>Nuevos productos sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-            <a class="aside" href="#9">Leer mas >></a>
-        </article>
-        <article>
-          <h4>La comunidad sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-            <a class="aside" href="#10">Leer mas >></a>
-        </article>
-        <section class="sidetwo">
-          <h3>MASCOTA DE LA SEMANA</h3>
-          <img src="images/tango.jpg" alt="Border Collie" class="tango">
-          <p>Stare at imaginary bug love blinks and
-            purr purr purr purr.</p>
-            <a class="aside" href="#11">Mas informacion >></a>
-        </section>
-      </aside>
-      <main class="acerca">
-          <article>
-            <h3 class="blue">
-              PERRUNO´S nace de la propia necesidad de alimentar de manera sana, equilibrada y económica
-              a nuestros 12 perros.
-            </h3>
-            <p>
-              La situación de escaso abastecimiento e inflación también afectó a nuestros amigos peludos y debíamos encontrar una
-              solución viable y rápida distinta a los alimentos industriales.
-            </p>
-            <p>
-              Analizamos varias alternativas y no
-              encontramos otra que ponernos a cocinar –oficio que tenemos por placer y arte-, y para ello
-              formulamos nuestra recetas a base de carne 50% (proteína y grasa animal), arroz 25% (carbohidrato),
-              zanahoria 12,25 % y ahuyama 12,25% (fibras y vitaminas).
-            </p>
-            <p>
-              Una vez que comenzamos a cocinar, y observar lo “mágica” y sabrosa que resultaba esta receta para
-              nuestros perros, comenzamos a pensar como nuestras abuelas: “Cocinar para 100 es igual que cocinar
-              para 10”. (calidad y amor).
-            </p>
-          </article>
-          <section>
-            <h4 class="comment">"Nuestras mascotas aman el sabor de perrunos y nosotros amamos su precio. Es saludable y economica, se la recomiendo."<br>
-            – Andrea</h4>
-          </section>
-          <article class="content-box" id="border-box">
-            <h3>NUESTRA HISTORIA</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat.
-               <a class="intext" href="#productos">Productos</a> de alta calidad quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat.</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                  nisi ut aliquip ex ea commodo consequat.</p>
-          </article>
-      </main>
-    </div>
-    <div class="productoscontainer">
-      <h2 id="productos" class="productos">PRODUCTOS</h2>
-      <main class="productos">
-        <article class="productospollo">
-          <h3 class="productos">
-            POPULAR DE POLLO
-          </h3>
-          <p class="productos">
-             Comida con ingredientes  100%  naturales y base de proteinas y grasas de origen animal, con la siguiente composición porcentual:
-          </p>
-          <ul class="comida">
-            <li><p><img src="images/carneicono.png" class="icono"> 50% Proteina Animal <br>(carapacho de pollo, carne y grasa, en proporción 3:2:1) </p></li>
-            <li><p><img src="images/arrozicono.png" class="icono"> 25% Arroz</p></li>
-            <li><p><img src="images/zanahoriaicono.png" class="icono"> 12.5% Zanahoria</p></li>
-            <li><p><img src="images/auyamaicono.png" class="icono"> 12.5% Auyama </p></li>
-          </ul>
-          <p class="productos">
-            Se trata de comida cocida, solida con un alto indice de húmeda. En presentaciones de 1 Kg y 1,5 Kg.
-          </p>
-          <img src="images/pollo.jpg" alt="pollo" class="comida">
-        </article>
-        <article class="productoscasera">
-          <h3 class="productos">
-            CASERA
-          </h3>
-          <p class="productos">
-             Comida con ingredientes 100 %, sin aditivos quimicos o perservantes, a base de proteinas y grasa animal, con la siguiente composición porcentual:
-          </p>
-          <ul class="comida">
-            <li><p><img src="images/carneicono.png" class="icono"> 50% Proteina Animal <br>(carne y grasa, proporción 4:1) </p></li>
-            <li><p><img src="images/arrozicono.png" class="icono"> 25% Arroz</p></li>
-            <li><p><img src="images/zanahoriaicono.png" class="icono"> 12.5% Zanahoria</p></li>
-            <li><p><img src="images/auyamaicono.png" class="icono"> 12.5% Auyama </p></li>
-          </ul>
-          <p class="productos">
-            Comida cocida, solida con alto indice de humeda, la proteina animal se presenta molida en un pure de arroz y auyama, destacando dados de zanahorias de textura consistente. Diseñada para perros de cualquier edad, tamaños y actividad fisica, muy aconsejable para canes con problemas dentales.
-          </p>
-          <img src="images/casera.jpg" alt="casera" class="comida">
-        </article>
-        <article class="productospremium">
-          <h3 class="productos">
-            PREMIUM
-          </h3>
-          <p class="productos">
-             Formulada con el mismo concepto, caracteristicas y propiedades que la  "Casera", aumentando el procentaje de proteina animal, disminuyendo carbohidratos y manteniendo los mismos niveles de vitamina y fibras que aportan los vegetales.
-          </p>
-          <ul class="comida">
-            <li><p><img src="images/carneicono.png" class="icono"> 70% Proteina Animal <br>(carne y grasa, proporción 4:1) </p></li>
-            <li><p><img src="images/arrozicono.png" class="icono"> 6.25% Arroz</p></li>
-            <li><p><img src="images/zanahoriaicono.png" class="icono"> 12.25% Zanahoria</p></li>
-            <li><p><img src="images/auyamaicono.png" class="icono"> 11.5% Auyama </p></li>
-          </ul>
-          <p class="productos">
-            Se trata de una comida cocida con alto indice de  húmeda, facil digestión y absorción de nutrientes
-          </p>
-          <img src="images/carne.jpg" alt="pollo" class="comida">
-        </article>
-        <article class="productosbarf">
-          <h3 class="productos">
-            ANCESTRAL TIPO BARF
-          </h3>
-          <p class="productos">
-             Receta desarrollada teniendo en mente la forma de alimientación de los primitivos lobos y perros, con alta contenida de proteinas animal, presencia de huesos y materia solida.
-          </p>
-          <ul class="comida">
-            <li><p><img src="images/carneicono.png" class="icono"> 76% Proteina Animal <br>(carne y grasa, proporción 4:1) </p></li>
-            <li><p><img src="images/arrozicono.png" class="icono"> 1% Arroz</p></li>
-            <li><p><img src="images/zanahoriaicono.png" class="icono"> 12% Zanahoria</p></li>
-            <li><p><img src="images/auyamaicono.png" class="icono"> 11% Auyama </p></li>
-          </ul>
-          <p class="productos">
-            Recomendamos la receta cruda, pudiendo suministrase cocida (los huesos siempre se agregen crudos).
-          </p>
-          <img src="images/barf.jpg" alt="pollo" class="comida">
-        </article>
-      </main>
-    </div>
-    <div  class="comprarcontainer">
-      <h2 id="comprar" class="comprar">DONDE COMPRAR</h2>
-      <main class="comprar">
-        <article>
-          <h3 class="blue">
-            Actualmente PERRUNO'S solo esta disponible atraves de nuestra pagina web, simplemente rellene el formulario y los estaremos contactando pronto.
-          </h3>
-        </article>
-      </main>
-    </div>
+    <section class="historia-container">
+      <p class="historia" data-aos="fade-left">Todo “Perruno”  que, como nosotros, vive en esta adorable tierra que es Venezuela, durante los últimos
+        cinco años ha enfrentado a la pregunta: </p>
+      <h2 class="historia-enfoque" data-aos="flip-up">¿Qué puedo darles de comer a mis perros?</h2>
+      <div class="franja" data-aos="zoom-in" >
+        <div class="arrow-up"></div>
+                <img src="images/food.png" alt="comida variada" class="historia-img-dos" >
+        <img src="images/pug.png" alt="perro dudoso" class="historia-img-uno" >
+      </div>
+      <p class="historia" data-aos="fade-right">La respuesta no
+      ha sido sencilla, aunque inicialmente carecía de cualquier connotación o preocupación nutricional; se
+      trataba literalmente de encontrar que dar de comer a nuestros amigos caninos. </p>
+      <p class="historia" data-aos="fade-left">Acostumbrados, como
+      estábamos, a alimentarlos con “Perra – harina” –croquetas o piensos industriales- un día nos
+      encontramos que en los anaqueles de las tiendas de mascotas, supermercados o tiendas de
+      conveniencias, no se encontraba más la “perra –harina”, toda la “comida” para perros, de cualquier
+      sabor, marca o color habían desaparecido. No existía. Pasaron los meses y reaparecieron todas las
+      marcas que tradicionalmente conocimos de croquetas industriales, y algunas con nuevos empaques y
+      sabores, incluso vimos marcas nuevas; pero a unos precios!!!</p>
+      <h2 class="historia-enfoque" data-aos="flip-up">  En más de una oportunidad en las “PET
+        SHOP” escuchamos esta frase: “Con ese precio prefiero darle a Mickey, lomito”.</h2>
+        <div class="mickey" data-aos="flip-right" data-aos-offset="0"  data-aos-anchor-placement="top-center" >
+          <p class="left" data-aos="fade-right">¿Qué puedo darles de comer a mis perros?. La pregunta martillaba nuestras cabezas.</p>
+          <img src="images/lomito.png" alt="pedazo de lomito" class="historia-img-cuatro" >
+          <img src="styles/dalmata.png" alt="perro hambriento" class="historia-img-tres" data-aos="zoom-in-up">
+          <p class="right" data-aos="fade-left"> El sentido común nos decía que la respuesta no podía ser “cualquier vaina”.</p>
+        </div>
+    </section>
     <div class="trans">
       <img src="images/transgrey.png" alt="imagen transcion" class="trans">
     </div>
@@ -195,6 +77,7 @@
       <p class="footertext">© 2018 PERRUNO'S| Caracas VE</p>
     </footer>
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="scripts/script.js" type="text/javascript"></script>
 </body>
 </html>

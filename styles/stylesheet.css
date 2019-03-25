@@ -167,7 +167,7 @@ div.acercacontainer{
   margin-bottom: 0px;
   position: relative;
 }
-main.acerca{
+/* main.acerca{
   max-width: 50%;
   max-height: 50rem;
   margin-left: 10%;
@@ -177,7 +177,6 @@ main.acerca{
   margin-bottom: 10%;
   margin-right: 10%;
   overflow: auto;
-  /* background-color: lightgrey; */
   border-radius: 0.625rem;
   margin-top:  3.125rem;
 }
@@ -194,9 +193,9 @@ h4.comment{
 h3.blue{
   color: var(--main-color);
   font-size: 1.25rem;
-}
+} */
 /* ASIDE --------------------------------------------------*/
-.news{
+/* .news{
     background-color: lightgrey;
     float: right;
     max-width: 20%;
@@ -217,7 +216,7 @@ a.aside:hover:not(.active) {
 }
 img.tango{
   width: 17.5rem;
-}
+} */
 /* PRODUCTOS --------------------------------------------- */
 div.productoscontainer{
   background-image: url(avilawhite2.png);
@@ -434,4 +433,125 @@ a.fa {
   60% {
     transform: translateY(-0.9375rem);
   }
+}
+/* HISTORIA ------------------------------------------------------------ */
+.historia-container{
+  text-align: center;
+  height: 2000px;
+}
+p.historia{
+  font-size: 1.5rem;
+  font-style: italic;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+h2.historia-enfoque{
+  color: var(--main-color);
+  font-size: 2.125rem;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.arrow-up{
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.franja{
+  width: 100%;
+  height: 385px;
+  background-color: #6593a3;
+  overflow: hidden;
+  justify-content: center;
+
+}
+
+.historia-img-uno{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 50px;
+  right: calc(50% - 170px);
+  width: 300px;
+}
+.historia-img-dos{
+  width: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  z-index: -1;
+  position: relative;
+  top: 0;
+  -webkit-animation: spin 7s infinite linear;
+  animation: spin 7s infinite linear;
+}
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% {
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+.historia-img-cuatro{
+  grid-area: top;
+  width: 50px;
+  margin-bottom: 50px;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+  animation: swinging 3.5s ease-in-out forwards infinite;
+}
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(15deg);}
+    50%{-webkit-transform: rotate(-15deg)}
+    100%{-webkit-transform: rotate(15deg);}
+}
+
+@keyframes swinging{
+    0%{transform: rotate(15deg);}
+    50%{transform: rotate(-15deg)}
+    100%{transform: rotate(15deg);}
+}
+.mickey{
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    " . . . . top . ."
+    ". left left center . . ."
+    ". left left center right right ."
+    ". . . center right right ."
+}
+p.left{
+  grid-area: left;
+  width: 100%;
+  padding-left: 5rem;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+p.right{
+  grid-area: right;
+  width: 100%;
+  padding-right: 5rem;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+.historia-img-tres{
+  grid-area: center;
+  width: 400px;
+  padding: 0;
+  margin: 0;
+  shape-outside: url(dalmata.png);
+  shape-image-threshold: 0.1rem;
 }
