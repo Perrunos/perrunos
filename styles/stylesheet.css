@@ -437,7 +437,9 @@ a.fa {
 /* HISTORIA ------------------------------------------------------------ */
 .historia-container{
   text-align: center;
-  height: 2000px;
+  height: auto;
+  overflow: hidden;
+  margin: 0px;
 }
 p.historia{
   font-size: 1.5rem;
@@ -467,7 +469,6 @@ h2.historia-enfoque{
   background-color: #6593a3;
   overflow: hidden;
   justify-content: center;
-
 }
 
 .historia-img-uno{
@@ -504,7 +505,7 @@ h2.historia-enfoque{
 .historia-img-cuatro{
   grid-area: top;
   width: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   -webkit-transform-origin: 50% 0;
   transform-origin: 50% 0;
   -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
@@ -522,6 +523,7 @@ h2.historia-enfoque{
     100%{transform: rotate(15deg);}
 }
 .mickey{
+  margin-bottom: 30px;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
@@ -554,4 +556,324 @@ p.right{
   margin: 0;
   shape-outside: url(dalmata.png);
   shape-image-threshold: 0.1rem;
+}
+.window{
+  margin-top: 80px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 4fr .5fr 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". window-left . window-right . "
+}
+.salt{
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 60%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.salt2{
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 62%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+.salt3{
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 65%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: .8s;
+  animation-fill-mode: forwards;
+}
+.salt4{
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 58%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+.salt5{
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 60%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.salt6{
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 62%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.salt7{
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 65%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+.salt8{
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 58%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: 2.4s;
+  animation-fill-mode: forwards;
+}
+.salt9{
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 63%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+.salt10{
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 64%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: .7s;
+  animation-fill-mode: forwards;
+}
+.salt11{
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 59%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: .4s;
+  animation-fill-mode: forwards;
+}
+.salt12{
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 58%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+.salt13{
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 60%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: .3s;
+  animation-fill-mode: forwards;
+}
+.salt14{
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 62%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.salt15{
+  font-family: serif;
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 65%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+.salt16{
+  font-family: serif;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: -400px;
+  left: 58%;
+  z-index: -1;
+  animation: fallingSalt ease-in infinite;
+  animation-duration: 6s;
+  animation-delay: 2.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes fallingSalt {
+  from{
+    top: -200px;
+  }
+  to{
+    top: 200px;
+  }
+}
+.window p.historia{
+  grid-area: window-right;
+  margin: 0px;
+  padding: 0px;
+  font-size: 2.5rem;
+}
+.franja-dos{
+  grid-area: window-left;
+  width: auto;
+  background-color: #6593a3;
+  overflow: hidden;
+  border-radius: 10%;
+  padding: 0px;
+  margin-bottom: 50px;
+
+}
+.historia-img-cinco{
+  width: 600px;
+  margin-top: 50px;
+  z-index: -2;
+  position: relative;
+  top: 10px;
+}
+.historia-img-seis{
+  width: 400px;
+  position: absolute;
+  top: 250px;
+  right: calc(50% - 300px);
+  margin-right: 0px;
+}
+.historia-img-siete{
+  width: 400px;
+  position: absolute;
+  top: -1px;
+  right: calc(50% - 300px);
+  margin-right: 0px;
+}
+
+#photos {
+  margin: 50px 10%;
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+  -webkit-column-count: 4;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    4;
+  -moz-column-gap:      0px;
+  column-count:         4;
+  column-gap:           0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+.enviar-foto{
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: 1000;
+  padding: .5rem 4rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: .8rem;
+  cursor: pointer;
+  display: block;
+  margin: .5rem auto;
+}
+.enviar-foto:hover {
+  background: #555555;
+  color: white;
+}
+h2.foto-enfoque{
+  color: #5555;
+  font-size: 2rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
