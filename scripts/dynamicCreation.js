@@ -81,13 +81,10 @@ const imageGrid = [
     altText:'Imagen de:',
     nombre:'Nicolas'
   }
-]
-
-
-
-var myArray = ['flip-up', 'flip-down', 'flip-left', 'flip-right'];
+];
 
 for (let i = 0; i < imageGrid.length; i++){
+  var myArray = ['flip-up', 'flip-down', 'flip-left', 'flip-right'];
   var rand = myArray[Math.floor(Math.random() * myArray.length)];
   const gridImage = document.createElement('img');
   gridImage.setAttribute('src', `${imageGrid[i].imageSrc}`);

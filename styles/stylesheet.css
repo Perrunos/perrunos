@@ -104,7 +104,7 @@ li.nav a:hover:not(.active) {
 /* HEADER ------------------------------------------------ */
 header{
   position: relative;
-  background-color: rgb(135,206,235,.6);
+  background-color: transparent;
   overflow: hidden;
   margin-top: 6.25rem;
   height: 50rem;
@@ -807,7 +807,7 @@ p.right{
 }
 
 #photos {
-  margin: 3.12rem 10%;
+  margin: 3.12rem 10% 6rem 10%;
   /* Prevent vertical gaps */
   line-height: 0;
 
