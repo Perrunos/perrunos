@@ -1,26 +1,24 @@
-/*
-Font-family: Arial;
+
+/* Font-family: Arial;
            current color palette vvvvvvvvvvvvvv
 Header background -------------> (68, 98, 122)
 extra brown -------------------> (129,86,55)
 nav rgb(40, 155, 184) ------> #5d907c
 footer rgb(55, 55, 55) --------> #39392f (57, 57, 47)
 
-
 font color rgb(81, 187, 214)
 nav rgb(236, 236, 235)
 Top of header rgb(81, 85, 88)
-/* GENERAL------------------------------------------------ */
-*:root {
-  --main-color: rgb(40, 155, 184);
-}
+main color rgb(40, 155, 184) */
+
+/* GENERAL--------------------------------------------------------------------- */
 *{
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
 body{
-  margin: 0;
   background-color: #ffffff;
+  margin: 0;
 }
 h3{
   font-weight: bold;
@@ -33,17 +31,17 @@ h4{
 p{
   font-size: 0.9rem;
 }
-/* LOADING ------------------------------------------------*/
+/* LOADING -------------------------------------------------------------------- */
 #loadingimg{
   width:18.75rem;
   height: 18.75rem;
+  margin-top: -9.4rem;
+  margin-left: -8.12rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -9.4rem;
-  margin-left: -8.12rem;
-  z-index: 9999;
   animation: loading 3s 0s infinite;
+  z-index: 9999;
 }
 @keyframes loading {
    from {
@@ -54,41 +52,34 @@ p{
   }
 }
 #loadingtext{
+  margin-top: 9.4rem;
+  margin-left: -9.4rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 9.4rem;
-  margin-left: -9.4rem;
   z-index: 9999;
 }
-/* NAV BAR ----------------------------------------------- */
+/* NAV BAR -------------------------------------------------------------------- */
 nav.nav {
   font-family: 'Orbitron', sans-serif;
-  position: -webkit-sticky;
+  margin-top: -6.25rem;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 10;
-  margin-top: -6.25rem;
 }
 ul.nav {
+    background-color:  rgb(255, 241, 208);
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color:  rgb(255, 241, 208);
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 li.nav {
     float: left;
 }
-/* add / between nav
-nav a::before {
-    content: "/";
-    padding: 0 1rem;
-}
-nav a::before {
-  content: ''; */
 li.nav a {
     display: block;
     color: #39392f;
@@ -101,26 +92,25 @@ li.nav a:hover:not(.active) {
     background-color: #111;
     color: white;
 }
-/* HEADER ------------------------------------------------ */
+/* HEADER --------------------------------------------------------------------- */
 header{
-  position: relative;
   background-color: transparent;
-  overflow: hidden;
-  margin-top: 6.25rem;
-  height: 50rem;
-  position: relative;
   background-image: url(avilawhite2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0  17.5rem;
+  height: 50rem;
+  margin-top: 6.25rem;
+  position: relative;
+  overflow: hidden;
 }
 h1{
-  position: relative;
-  text-transform: uppercase;
-  font-size: 3.75rem;
   color: black;
+  font-size: 3.75rem;
   margin: 0;
   padding-bottom: 0;
+  position: relative;
+  text-transform: uppercase;
   text-align: center;
 }
 .subtitle {
@@ -129,36 +119,36 @@ h1{
   font-size: 1.875rem;
   max-width: 40%;
   padding-bottom: 1.875rem;
-  overflow: auto;
   padding-top: 0;
   margin-top: 0rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  overflow: auto;
 }
 .opaque{
-  position: relative;
   background-color: #000;
   background-image: url(background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 - 3.125rem;
+  background-position: 0  -3.125rem;
+  position: relative;
 }
 img.logo{
-  width: 17.5rem;
   color: white;
+  width: 17.5rem;
   margin: 0;
   padding: 0;
 }
 img.header{
   display: block;
+  width: 25%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.875rem;
-  width: 25%;
 }
-/* ACERCA ------------------------------------------------ */
-div.acercacontainer{
+/* ACERCA --------------------------------------------------------------------- */
+/* div.acercacontainer{
   padding-bottom: 12.5rem;
   background-image: url(avilablue.png);
   background-repeat: no-repeat;
@@ -166,149 +156,8 @@ div.acercacontainer{
   background-position: 0 31.25rem;
   margin-bottom: 0rem;
   position: relative;
-}
-/* main.acerca{
-  max-width: 50%;
-  max-height: 50rem;
-  margin-left: 10%;
-  justify-content: flex-start;
-  padding:  1.25rem;
-  padding-bottom:  1.25rem;
-  margin-bottom: 10%;
-  margin-right: 10%;
-  overflow: auto;
-  border-radius: 0.625rem;
-  margin-top:  3.125rem;
-}
-a.intext{
-  text-decoration: none;
-  color: var(--main-color);
-  font-size:  0.9rem;
-}
-h4.comment{
-  font-size: 1.375rem;
-  color: var(--main-color);
-  padding: 1.875rem 0;
-}
-h3.blue{
-  color: var(--main-color);
-  font-size: 1.25rem;
 } */
-/* ASIDE --------------------------------------------------*/
-/* .news{
-    background-color: lightgrey;
-    float: right;
-    max-width: 20%;
-    margin-right: 12%;
-    padding:  1.25rem;
-    overflow: auto;
-    border-radius: 0.625rem;
-    margin-top:  3.125rem;
-    margin-bottom:  3.125rem;
-}
-a.aside{
-  text-decoration: none;
-  color: var(--main-color);
-}
-a.aside:hover:not(.active) {
-    background-color: #111;
-    color: white;
-}
-img.tango{
-  width: 17.5rem;
-} */
-/* PRODUCTOS --------------------------------------------- */
-/* div.productoscontainer{
-  background-image: url(avilawhite2.png);
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-position: -105rem 110rem;
-  margin-bottom: 0rem;
-  position: relative;
-}
-p.productos{
-  font-size: 1.125rem;
-  padding:  1.25rem;
-}
-h2.productos{
-  color: #383838;
-  font-size: 2.125rem;
-  text-align: center;
-}
-h3.productos{
-  color: var(--main-color);
-  font-size: 1.5rem;
-  padding-left:  1.25rem;
-}
-div.productoscontainer{
-  background-color: #6795a6;
-  margin-top: 0;
-  padding-top: 0.625rem;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  position: relative;
-}
-main.productos{
-  max-width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding:  1.25rem;
-  margin-top:  3.125rem;
-  margin-bottom: 0rem;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-between;
-}
-article.productospollo{
-  width: 45%;
-  height6rem;
-  padding-bottom: 0;
-  margin:0 0 5% 0;
-  background-color: lightgrey;
-  border: 0.625rem #006ab0 solid;
-  border-radius: 0.625rem;
-  position: relative;
-}
-article.productoscasera{
-  width: 45%;
-  height: 56rem;
-  padding-bottom: 0;
-  margin:0 0 5% 0;
-  background-color: lightgrey;
-  border: 0.625rem #ab629d solid;
-  border-radius: 0.625rem;
-  position: relative;
-}
-article.productospremium{
-  width: 45%;
-  height: 56rem;
-  padding-bottom: 0;
-  margin:0 0 20rem 0;
-  background-color: lightgrey;
-  border: 0.625rem #ffc365 solid;
-  border-radius: 0.625rem;
-  position: relative;
-}
-article.productosbarf{
-  width: 45%;
-  height: 56rem;
-  padding-bottom: 0;
-  margin:0 0 20rem 0;
-  background-color: lightgrey;
-  border: 0.625rem #aadc65 solid;
-  border-radius: 0.625rem;
-  position: relative;
-}
-img.comida{
-  padding-top: auto;
-  margin: 0;
-  height: 16.56rem;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-  bottom: 0;
-} */
-/* SILUETA PERROS--------------------------------------------- */
+/* SILUETA PERROS-------------------------------------------------------------- */
 div.trans{
   background-color: white;
   width: auto;
@@ -316,89 +165,53 @@ div.trans{
   padding-top: 0;
 }
 img.trans{
+  display: block;
   width: 50vw;
   margin: 0rem;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0rem;
   position: relative;
   bottom: -2.5rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
-/* DONDE COMPRAR -------------------------------------------- */
-/* div.comprarcontainer{
-  background-color: #ffffff;
-}
-p.productos{
-  font-size: 1.125rem;
-  padding:  1.25rem;
-}
-h2.comprar{
-  color: #383838;
-  font-size: 2.125rem;
-  text-align: center;
-}
-main.comprar{
-  max-width: 100%;
-  max-height: 50rem;
-  margin-left: 10%;
-  justify-content: flex-start;
-  padding:  1.25rem;
-  padding-bottom:  1.25rem;
-  margin-bottom: 10%;
-  margin-right: 10%;
-  overflow: auto;
-  text-align: center;
-  background-color: lightgrey;
-  border-radius: 0.625rem;
-  margin-top:  3.125rem;
-} */
-/* FOOTER ----------------------------------------------------*/
+/* FOOTER --------------------------------------------------------------------- */
 footer{
-background-color: #383838;
-padding-top: 4.375rem;
-padding-bottom: 2.5rem;
-text-align: center;
+  background-color: #383838;
+  padding-top: 4.375rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
 }
 ul.containerfooter{
-  padding:  1.25rem;
+  width: 97%;
   font-size: 0.9375rem;
+  padding:  1.25rem;
   display: flex;
   justify-content: center;
-  width: 97%;
 }
 li.footer{
   text-decoration: none;
   list-style-type: none;
   float: left;
 }
-a.footer {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    list-style-type: none;
+a.footer , a.footer-slash{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  list-style-type: none;
 }
-a.firstfooter {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    list-style-type: none;
+a.footer:hover , a.footer-slash:hover{
+  color: rgb(40, 155, 184);
 }
-a.footer::before {
+.footer-slash::before {
     content: "/";
     padding: 0 1rem;
+    color: white;
 }
 p.footertext{
   max-width: 100%;
   color: white;
 }
-p.footertexttwo{
-  max-width: 100%;
-  color: white;
-  padding-top: 2.5rem;
-}
-/* ARROW----------------------------------------------------- */
-body { background: @bg;}
+/* ARROW----------------------------------------------------------------------- */
 a.fa {
   color: black;
   text-decoration: none;
@@ -424,7 +237,7 @@ a.fa {
     transform: translateY(-0.9375rem);
   }
 }
-/* HISTORIA ------------------------------------------------------------ */
+/* HISTORIA GENERAL------------------------------------------------------------ */
 .historia-container{
   text-align: center;
   height: auto;
@@ -438,44 +251,42 @@ p.historia{
   padding-right: 6.25rem;
 }
 h2.historia-enfoque{
-  color: var(--main-color);
+  color: rgb(40, 155, 184);
   font-size: 2.125rem;
   padding-left: 6.25rem;
   padding-right: 6.25rem;
 }
+/* HISTORIA PUG --------------------------------------------------------------- */
+.franja{
+  background-color: #6593a3;
+  width: 100%;
+  height: 24rem;
+  justify-content: center;
+  overflow: hidden;
+}
 .arrow-up{
   width: 0;
   height: 0;
+  margin-left: auto;
+  margin-right: auto;
   border-left: 1.88rem solid transparent;
   border-right: 1.88rem solid transparent;
   border-top: 1.88rem solid white;
-  margin-left: auto;
-  margin-right: auto;
 }
-
-.franja{
-  width: 100%;
-  height: 24rem;
-  background-color: #6593a3;
-  overflow: hidden;
-  justify-content: center;
-}
-
 .historia-img-uno{
+  width: auto;
+  max-width: 18.75rem;
   margin-top: 3.12rem;
   margin-bottom: 3.12rem;
   position: absolute;
   top: 3.12rem;
   right: calc(50% - 10.62rem);
-  width: scaleX(1);
-  max-width: 18.75rem;
 }
 .historia-img-dos{
-  width: scaleX(1);
+  width: auto;
   max-width: 37.5rem;
   margin-top: 3.12rem;
   margin-bottom: 3.12rem;
-  z-index: -1;
   position: relative;
   top: 0;
   -webkit-animation: spin 7s infinite linear;
@@ -494,8 +305,33 @@ h2.historia-enfoque{
         transform:rotate(360deg);
     }
 }
+/* HISTORIA DALMATA ----------------------------------------------------------- */
 .historia-img-cuatro{
   grid-area: top;
+}
+p.left{
+  grid-area: left;
+}
+p.right{
+  grid-area: right;
+}
+.historia-img-tres{
+  grid-area: center;
+}
+.mickey{
+  margin-bottom: 1.87rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  /*  1fr  3fr  3fr  3fr    3fr   3fr  1fr */
+    "  .    .    .    .     top    .    .  "
+    "  .  left left center   .     .    .  "
+    "  .  left left center right right  .  "
+    "  .    .    .  center right right  .  "
+}
+.historia-img-cuatro{
   width: 3.12rem;
   margin-bottom: 1.87rem;
   -webkit-transform-origin: 50% 0;
@@ -514,40 +350,32 @@ h2.historia-enfoque{
     50%{transform: rotate(-15deg)}
     100%{transform: rotate(15deg);}
 }
-.mickey{
-  margin-bottom: 1.87rem;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr 3fr 3fr 3fr 3fr 3fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    " . . . . top . ."
-    ". left left center . . ."
-    ". left left center right right ."
-    ". . . center right right ."
-}
 p.left{
-  grid-area: left;
   width: 100%;
-  padding-left: 5rem;
   font-size: 2.5rem;
   font-style: italic;
+  padding-left: 5rem;
 }
 p.right{
-  grid-area: right;
   width: 100%;
-  padding-right: 5rem;
-  margin-right: 1rem;
   font-size: 2.5rem;
   font-style: italic;
+  padding-right: 5rem;
+  margin-right: 1rem;
 }
 .historia-img-tres{
-  grid-area: center;
-  width: 400px;
+  width: 25rem;
   padding: 0;
   margin: 0;
-  shape-outside: url(dalmata.png);
-  shape-image-threshold: 0.1rem;
+  /* shape-outside: url(dalmata.png);
+  shape-image-threshold: 0.1rem; */
+}
+/* HISTORIA WINDOW ------------------------------------------------------------ */
+.window p.historia{
+  grid-area: window-right;
+}
+.franja-dos{
+  grid-area: window-left;
 }
 .window{
   margin-top: 5rem;
@@ -558,199 +386,97 @@ p.right{
   grid-template-areas:
   ". window-left . window-right . "
 }
+/* salt ----------------------------------------------------------------------- */
 .salt1{
   font-size: 3rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 60%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: 1s;
-  animation-fill-mode: forwards;
 }
 .salt2{
   font-size: 2rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 62%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: .5s;
-  animation-fill-mode: forwards;
 }
 .salt3{
   font-size: 3rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 65%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: .8s;
-  animation-fill-mode: forwards;
 }
 .salt4{
   font-size: 2rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 58%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: 1.2s;
-  animation-fill-mode: forwards;
 }
 .salt5{
   font-size: 3rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 60%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: 2s;
-  animation-fill-mode: forwards;
 }
 .salt6{
   font-size: 2rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 62%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: 1s;
-  animation-fill-mode: forwards;
 }
 .salt7{
   font-size: 3rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 65%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: 1.6s;
-  animation-fill-mode: forwards;
 }
 .salt8{
   font-size: 2rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 58%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: 2.4s;
-  animation-fill-mode: forwards;
 }
 .salt9{
   font-size: 1rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 63%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: 1.2s;
-  animation-fill-mode: forwards;
 }
 .salt10{
   font-size: 2rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 64%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: .7s;
-  animation-fill-mode: forwards;
 }
 .salt11{
   font-size: 3rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 59%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: .4s;
-  animation-fill-mode: forwards;
 }
 .salt12{
   font-size: 1rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 58%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: 1.6s;
-  animation-fill-mode: forwards;
 }
 .salt13{
   font-size: 3rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 60%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: .3s;
-  animation-fill-mode: forwards;
 }
 .salt14{
   font-size: 2rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 62%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: 1s;
-  animation-fill-mode: forwards;
 }
 .salt15{
-  font-family: serif;
   font-size: 1rem;
-  color: white;
-  position: absolute;
-  top: -25rem;
   left: 65%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
-  animation-duration: 6s;
   animation-delay: 1.6s;
-  animation-fill-mode: forwards;
 }
 .salt16{
-  font-family: serif;
   font-size: 2rem;
+  left: 58%;
+  animation-delay: 2.4s;
+}
+.salt [class^="salt"]{
   color: white;
   position: absolute;
   top: -25rem;
-  left: 58%;
-  z-index: -1;
-  animation: fallingSalt ease-in infinite;
+  animation-name: fallingSalt;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
   animation-duration: 6s;
-  animation-delay: 2.4s;
   animation-fill-mode: forwards;
+  z-index: -1;
 }
 @keyframes fallingSalt {
   from{
@@ -760,44 +486,42 @@ p.right{
     top: 12.5rem;
   }
 }
+/* HISTORIA WINDOW cont ------------------------------------------------------  */
 .window p.historia{
-  grid-area: window-right;
   margin: 0rem;
   padding: 0rem;
   font-size: 2.5rem;
 }
 .franja-dos{
-  grid-area: window-left;
-  width: auto;
   background-color: #6593a3;
-  overflow: hidden;
-  border-radius: 10%;
+  width: auto;
   padding: 0rem;
   margin-bottom: 3.12rem;
-
+  border-radius: 10%;
+  overflow: hidden;
 }
 .historia-img-cinco{
   width: 37.5rem;
   margin-top: 3.12rem;
-  z-index: -2;
   position: relative;
   top: 0.6rem;
+  z-index: -2;
 }
 .historia-img-seis{
   width: 25rem;
+  margin-right: 0rem;
   position: absolute;
   top: 15.7rem;
   right: calc(50% - 18.75rem);
-  margin-right: 0rem;
 }
 .historia-img-siete{
   width: 25rem;
+  margin-right: 0rem;
   position: absolute;
   top: -0.06rem;
   right: calc(50% - 18.75rem);
-  margin-right: 0rem;
 }
-
+/* IMAGE GRID ----------------------------------------------------------------  */
 #photos {
   margin: 3.12rem 10% 6rem 10%;
   /* Prevent vertical gaps */
@@ -810,13 +534,11 @@ p.right{
   column-count:         4;
   column-gap:           0rem;
 }
-
 #photos img {
   /* Just in case there are inline attributes */
   width: 100% !important;
   height: auto !important;
 }
-
 @media (max-width: 1200px) {
   #photos {
   -moz-column-count:    4;
@@ -846,18 +568,18 @@ p.right{
   }
 }
 .enviar-foto{
-  background-color: var(--main-color);
-  border: none;
-  border-radius: 0.125rem;
+  display: block;
+  background-color: rgb(40, 155, 184);
   color: white;
-  font-weight: 1000;
-  padding: .5rem 4rem;
+  font-size: .8rem;
+  font-weight: bolder;
   text-decoration: none;
   text-align: center;
-  font-size: .8rem;
-  cursor: pointer;
-  display: block;
+  padding: .5rem 4rem;
   margin: .5rem auto;
+  border: none;
+  border-radius: 0.125rem;
+  cursor: pointer;
 }
 .enviar-foto:hover {
   background: #555555;
@@ -869,77 +591,78 @@ h2.foto-enfoque{
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
-
-.historia-img-ocho{
-  grid-area: ocho;
+/* HISTORIA RECETAS GRID 1 ---------------------------------------------------- */
+#historia-img-ocho{
+  grid-area: logo-left;
 }
-.historia-img-once{
-  grid-area: once;
+#historia-img-once{
+  grid-area: logo-right;
 }
 ul.comida-uno{
-  grid-area: c1;
+  grid-area: text-left;
 }
 ul.comida-dos{
-  grid-area: c2;
+  grid-area: text-right;
 }
 #top{
-  grid-area: a1;
+  grid-area: arrow-one;
 }
-.franja-tres{
+#franja-tres{
+  background-color: #6593a3;
   width: 100%;
-  height: 12rem;
+  height: 13rem;
   margin-bottom: 0rem;
   margin-top: 5rem;
-  background-color: #6593a3;
   justify-content: center;
   overflow: hidden;
+  position:relative;
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr 1fr 2fr 3fr 1fr ;
+  grid-template-columns: 3fr 3fr 4fr 1fr 4fr 3fr 3fr ;
   grid-template-rows: auto;
   grid-template-areas:
-  ". c1 ocho a1 once c2 . "
-}
+  ". text-left logo-left arrow-one logo-right text-right . "
 
-.historia-img-nueve{
-  grid-area: nueve;
 }
-.historia-img-diez{
-  grid-area: diez;
+/* HISTORIA RECETAS GRID 2 ---------------------------------------------------- */
+#historia-img-nueve{
+  grid-area: logo2-left;
+}
+#historia-img-diez{
+  grid-area: logo2-right;
 }
 ul.comida-tres{
-  grid-area: c3;
+  grid-area: text2-right;
 }
 ul.comida-cuatro{
-  grid-area: c4;
+  grid-area: text2-left;
 }
 #bot{
-  grid-area: a2;
+  grid-area: arrow-two;
 }
-.franja-cuatro{
+#franja-cuatro{
   width: 100%;
-  height: 12rem;
+  height: 13rem;
   margin-bottom: 5rem;
   margin-top: 0rem;
   background-color: #555;
   justify-content: center;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr 1fr 2fr 3fr 1fr ;
+  grid-template-columns: 3fr 3fr 4fr 1fr 4fr 3fr 3fr ;
   grid-template-rows: auto;
   grid-template-areas:
-  ". c4 nueve a2 diez c3 ."
+  ". text2-left logo2-left arrow-two logo2-right text2-right ."
 }
-
-#recetas img{
+/* HISTORIA RECETAS cont ------------------------------------------------------ */
+.recetas img{
   width: 400px;
-  padding: 0rem;
+  padding: 1rem 0rem;
   margin: 2rem 0rem;
 }
 #bot{
   border-top: 1.88rem solid #6593a3;
 }
-
-ul.comida-uno{
+ul[class^="comida"]{
   color: white;
   font-weight: bold;
   list-style-type: none;
@@ -948,42 +671,82 @@ ul.comida-uno{
   margin-top: 1.5rem;
   opacity: 0;
 }
-ul.comida-uno li p {
-    font-size: .6rem;
+ul[class^="comida"] li p {
+  font-size: .7rem;
 }
-ul.comida-dos{
-  color: white;
-  font-weight: bold;
+.comida-uno , .comida-cuatro{
+  text-align: left;
+}
+.comida-dos , .comida-tres{
+  text-align: right;
+}
+ul.comida-uno li p{
+  font-size: .6rem;
+}
+ul.visible{
+  animation: appear 3s ease-in 0s forwards;
+}
+@keyframes appear {
+  100% {
+    opacity: 100;
+  }
+}
+/* BOTONES */
+ul.bot {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-top: 1.5rem;
-  opacity: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
-ul.comida-dos li p {
-    font-size: .7rem;
+li.bot {
+  float: left;
 }
-ul.comida-tres{
+li.bot a {
+  background-color: rgb(40, 155, 184);
+  display: block;
+  font-size: 2rem;
   color: white;
+  text-align: center;
+  padding:  .875rem 1rem;
+  margin: 2rem;
+  text-decoration: none;
   font-weight: bold;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 1.5rem;
-  opacity: 0;
+  border-radius: 5%;
 }
-ul.comida-tres li p {
-    font-size: .7rem;
+li.bot a:hover:not(.active) {
+  color: #555;
 }
-ul.comida-cuatro{
-  color: white;
-  font-weight: bold;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 1.5rem;
-  opacity: 0;
+#left-arrow-text{
+  padding-right: 2rem;
 }
-ul.comida-cuatro li p {
-    font-size: .7rem;
+#right-arrow-text{
+  padding-left: 1.5rem; 
+}
+#left-arrow::before{
+  content: " ";
+  width: 0;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2.3rem solid transparent;
+  border-right: 2.3rem solid rgb(40, 155, 184);
+  border-top: 2.3rem solid transparent;
+  position: absolute;
+  top: 2.1rem;
+  left: -.2rem;
+}
+#right-arrow::after{
+  content: " ";
+  width: 0;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2.3rem solid transparent;
+  border-left: 2.3rem solid rgb(40, 155, 184);
+  border-top: 2.3rem solid transparent;
+  position: absolute;
+  top: 2.1rem;
+  right: -.2rem;
 }

@@ -1,6 +1,6 @@
 for(i = 1; i < 17; i++){
     const saltDot = document.createElement('p');
-    saltDot.setAttribute('class',`salt${i}`)
+    saltDot.setAttribute('class',`salt${i}`);
     saltDot.innerText = '.';
     document.querySelector('.salt').appendChild(saltDot);
 }

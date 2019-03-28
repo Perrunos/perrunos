@@ -79,42 +79,48 @@
         <button type="button" class="enviar-foto" data-aos="flip-up">Envia tu foto!</button>
       </section>
       <p class="historia" data-aos="fade-right"> Pasados los meses se incorporaron al equipo de PERRUNO´S, médicos veterinarios y estudiosos de nutrición canina. Ellos consideraron como prioridad atender la condición de carnívoros de nuestros peludos amigos, y poniendo mucho sentido común, formularon nuevas recetas buscando mejorar la comida que ofrecemos para tus perros, a la alimentación que sus ancestros consumieron cuando vagaban y cazaban en bosques y praderas.</p>
-      <section class="franja-tres" id="recetas" data-aos="fade-left">
+      <div id="franja-tres" class="recetas" data-aos="fade-left">
         <div class="arrow-up" id="top"></div>
-        <img src="images/perrunosazul.png" alt="Popular de polllo" class="historia-img-ocho" >
+        <img src="images/perrunosazul.png" alt="Popular de polllo" id="historia-img-ocho" >
         <ul class="comida-uno">
           <li><p>50% Proteina Animal <br>(carapacho de pollo, carne y grasa, en proporción 3:2:1) </p></li>
           <li><p>25% Arroz</p></li>
           <li><p>12.5% Zanahoria</p></li>
           <li><p>12.5% Auyama </p></li>
         </ul>
-        <img src="images/perrunosverde.png" alt="Ancestral Barf" class="historia-img-once" >
+        <img src="images/perrunosverde.png" alt="Ancestral Barf" id="historia-img-once" >
         <ul class="comida-dos">
           <li><p> 76% Proteina Animal <br>(carne y grasa, proporción 4:1) </p></li>
           <li><p> 1% Arroz</p></li>
           <li><p> 12% Zanahoria</p></li>
           <li><p> 11% Auyama </p></li>
         </ul>
-      </section>
-      <section class="franja-cuatro" id="recetas" data-aos="fade-right">
+      </div>
+      <div id="franja-cuatro" class="recetas" data-aos="fade-right">
         <div class="arrow-up" id="bot"></div>
-        <img src="images/perrunosamarillo.png" alt="Premium" class="historia-img-diez" >
+        <img src="images/perrunosamarillo.png" alt="Premium" id="historia-img-diez" >
         <ul class="comida-tres">
           <li><p>70% Proteina Animal <br>(carne y grasa, proporción 4:1) </p></li>
           <li><p>6.25% Arroz</p></li>
           <li><p>12.25% Zanahoria</p></li>
           <li><p>11.5% Auyama </p></li>
         </ul>
-        <img src="images/perrunosrosado.png" alt="Casera" class="historia-img-nueve" >
+        <img src="images/perrunosrosado.png" alt="Casera" id="historia-img-nueve" >
         <ul class="comida-cuatro">
           <li><p>50% Proteina Animal <br>(carne y grasa, proporción 4:1) </p></li>
           <li><p>25% Arroz</p></li>
           <li><p>12.5% Zanahoria</p></li>
           <li><p>12.5% Auyama </p></li>
         </ul>
-      </section>
+      </div>
       <p class="historia" data-aos="fade-left">PERRUNO´S nace así, de la propia necesidad diaria de alimentar a nuestros perros de manera sana, balanceada y con una justa relación calidad – precio, apoyados en una asesoría profesional y conocimiento profundo de los requerimientos nutricionales de nuestros comensales.</p>
       <h2 class="historia-enfoque" data-aos="zoom-in-up"> PERRUNO´S te ayuda a resolver el dilema <br> “qué le doy de comer a mi perro”</h2>
+      <div class="botones">
+          <ul class="bot">
+            <li class="bot"  data-aos="zoom-in-right" id="left-arrow"><a href="#productos" id="left-arrow-text" >Productos</a></li>
+            <li class="bot"  data-aos="zoom-in-left"  id="right-arrow"><a href="#3" id="right-arrow-text">Comunidad</a></li>
+          </ul>
+      </div>
     </section>
     <div class="trans">
       <img src="images/transgrey.png" alt="imagen transcion" class="trans">
@@ -122,17 +128,17 @@
     <footer >
       <img src="images/logo-carita.png" alt="perrunos logo" class="logo">
       <h1>Perruno's</h1>
-        <p class="footertext">Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
-          esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-        <ul class="containerfooter">
-          <li class="footer"><a class="firstfooter" href="#productos">Productos</a></li>
-          <li class="footer"><a class="footer" href="#6">Ingredientes</a></li>
-          <li class="footer"><a class="footer" href="#7">Donde Comprar</a></li>
-          <li class="footer"><a class="footer" href="#8">Contactanos</a></li>
-        </ul>
+      <ul class="containerfooter">
+        <li class="footer"><a class="footer" href="#productos">Productos</a></li>
+        <li class="footer"><a class="footer-slash" href="#6">Ingredientes</a></li>
+        <li class="footer"><a class="footer-slash" href="#7">Donde Comprar</a></li>
+        <li class="footer"><a class="footer-slash" href="#8">Contactanos</a></li>
+      </ul>
+      <p class="footertext">Todos los derechos reservados. | Términos y Condiciones | Aspectos Legales </p>
       <p class="footertext">© 2018 PERRUNO'S| Caracas VE</p>
     </footer>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="scripts/dynamicCreation.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="scripts/script.js"></script>

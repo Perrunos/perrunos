@@ -34,3 +34,17 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+$('#historia-img-ocho').hover(function(e) {
+  $('.comida-uno').addClass('visible');
+})
+$('#historia-img-nueve').hover(function(e) {
+  $('.comida-cuatro').addClass('visible');
+})
+$('#historia-img-diez').hover(function(e) {
+  $('.comida-tres').addClass('visible');
+})
+$('#historia-img-once').hover(function(e) {
+  $('.comida-dos').addClass('visible');
+})
