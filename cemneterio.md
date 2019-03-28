@@ -153,3 +153,16 @@
     </article>
   </main>
 </div>
+
+
+
+<section class="franja-tres" id="recetas" data-aos="fade-left">
+  <div class="arrow-up"></div>
+  <img src="images/perrunosazul.png" alt="  " class="historia-img-ocho" >
+  <img src="images/perrunosverde.png" alt="  " class="historia-img-once" >
+</section>
+<section class="franja-cuatro" id="recetas" data-aos="fade-right">
+  <div class="arrow-up" id="second"></div>
+  <img src="images/perrunosamarillo.png" alt="  " class="historia-img-diez" >
+  <img src="images/perrunosrosado.png" alt="  " class="historia-img-nueve" >
+</section>

@@ -84,13 +84,12 @@ const imageGrid = [
 ];
 
 for (let i = 0; i < imageGrid.length; i++){
-  var myArray = ['flip-up', 'flip-down', 'flip-left', 'flip-right'];
-  var rand = myArray[Math.floor(Math.random() * myArray.length)];
+  var modes = ['flip-up', 'flip-down', 'flip-left', 'flip-right'];
+  var randMode = modes[Math.floor(Math.random() * modes.length)];
   const gridImage = document.createElement('img');
+  document.querySelector('#photos').insertBefore(gridImage, document.querySelector('.foto-enfoque'));
   gridImage.setAttribute('src', `${imageGrid[i].imageSrc}`);
   gridImage.setAttribute('alt', `${imageGrid[i].altText} ${imageGrid[i].nombre}`);
-  gridImage.setAttribute('data-aos', `${rand}`);
+  gridImage.setAttribute('data-aos', `${randMode}`);
   gridImage.setAttribute('data-aos-anchor-placement','center-center');
-  document.querySelector('#photos').insertBefore(gridImage, document.querySelector('.foto-enfoque'));
-
-}
+};

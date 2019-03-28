@@ -477,10 +477,12 @@ h2.historia-enfoque{
   position: absolute;
   top: 3.12rem;
   right: calc(50% - 10.62rem);
-  width: 18.75rem;
+  width: scaleX(1);
+  max-width: 18.75rem;
 }
 .historia-img-dos{
-  width: 37.5rem;
+  width: scaleX(1);
+  max-width: 37.5rem;
   margin-top: 3.12rem;
   margin-bottom: 3.12rem;
   z-index: -1;
@@ -876,4 +878,39 @@ h2.foto-enfoque{
   font-size: 2rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
+}
+.franja-tres{
+  width: 100%;
+  height: 14rem;
+  margin-bottom: 0rem;
+  background-color: #6593a3;
+  overflow: hidden;
+  justify-content: center;
+}
+.franja-cuatro{
+  width: 100%;
+  height: 14rem;
+  background-color: #555;
+  overflow: hidden;
+  justify-content: center;
+}
+.historia-img-ocho{
+  grid-area: ocho;
+}
+.historia-img-nueve{
+  grid-area: nueve;
+}
+.historia-img-diez{
+  grid-area: diez;
+}
+.historia-img-once{
+  grid-area: once;
+}
+#recetas img{
+  width: 400px;
+  padding: 0rem 2rem 2rem 2rem;
+  margin: 2rem auto;
+}
+#second{
+  border-top: 1.88rem solid #6593a3;
 }
