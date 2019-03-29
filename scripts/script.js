@@ -48,3 +48,8 @@ $('#historia-img-diez').hover(function(e) {
 $('#historia-img-once').hover(function(e) {
   $('.comida-dos').addClass('visible');
 })
+
+
+$('#hamburger').click(function(e){
+  $('li.nav').toggleClass('showing');
+})

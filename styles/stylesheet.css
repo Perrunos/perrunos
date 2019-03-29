@@ -92,6 +92,10 @@ li.nav a:hover:not(.active) {
     background-color: #111;
     color: white;
 }
+#hamburger{
+  position: absolute;
+  visibility: hidden;
+}
 /* HEADER --------------------------------------------------------------------- */
 header{
   background-color: transparent;
@@ -659,6 +663,9 @@ ul.comida-cuatro{
   padding: 1rem 0rem;
   margin: 2rem 0rem;
 }
+.recetas:hover{
+  cursor:  pointer;
+}
 #bot{
   border-top: 1.88rem solid #6593a3;
 }
@@ -722,7 +729,7 @@ li.bot a:hover:not(.active) {
   padding-right: 2rem;
 }
 #right-arrow-text{
-  padding-left: 1.5rem; 
+  padding-left: 1.5rem;
 }
 #left-arrow::before{
   content: " ";
