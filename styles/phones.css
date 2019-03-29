@@ -13,8 +13,8 @@ header{
   /* background-image: url(avilawhite2.png); */
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0  110.5rem;
-  height: 130rem;
+  background-position: 0  100%;
+  height: 100%;
   margin-top: 6.25rem;
   position: relative;
   overflow: hidden;
@@ -46,7 +46,7 @@ img.header{
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20rem;
+  margin-top: 50%;
 }
 /* ARROW----------------------------------------------------------------------- */
 a.fa {
