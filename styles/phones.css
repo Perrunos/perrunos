@@ -109,3 +109,68 @@ li.nav a:hover:not(.active) {
     visibility: visible;
   }
 }
+/* HISTORIA DALMATA ----------------------------------------------------------- */
+.mickey{
+  margin-bottom: 1.87rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  /*  1fr  3fr  2fr  1fr */
+    "  .  left  left   .  "
+    "  .    .   top    .  "
+    "  . center center .  "
+    "  .  right right  .  "
+}
+p.left{
+  width: 100%;
+  font-size: 2.5rem;
+  font-style: italic;
+  padding-left: 0rem;
+}
+/* HISTORIA WINDOW ------------------------------------------------------------ */
+.window{
+  margin-top: 5rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". window-left ."
+  ". window-right ."
+}
+.franja-dos{
+  display: inline-block;
+  background-color: #6593a3;
+  width: 100%;
+  padding: 0rem;
+  margin-bottom: 3.12rem;
+  border-radius: 0%;
+  overflow: hidden;
+}
+.historia-img-cinco{
+  width: 100%;
+  margin-top: 3.12rem;
+  position: relative;
+  top: 1rem;
+  z-index: -2;
+}
+.historia-img-seis{
+  width: 25rem;
+  margin-right: 0rem;
+  position: absolute;
+  top: 16.7rem;
+  right: calc(50% - 18.75rem);
+}
+.historia-img-siete{
+  width: 25rem;
+  margin-right: 0rem;
+  position: absolute;
+  top: 0rem;
+  right: calc(50% - 18.75rem);
+}
+.window p.historia{
+  color: rgb(40, 155, 184);
+  font-size: 2.125rem;
+}

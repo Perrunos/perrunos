@@ -69,13 +69,13 @@ nav.nav {
   z-index: 10;
 }
 ul.nav {
-    background-color:  rgb(255, 241, 208);
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  background-color:  rgb(255, 241, 208);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 li.nav {
     float: left;
@@ -186,11 +186,12 @@ footer{
   text-align: center;
 }
 ul.containerfooter{
-  width: 97%;
+  width: 100%;
   font-size: 0.9375rem;
-  padding:  1.25rem;
+  padding:  1.25rem 0rem;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 li.footer{
   text-decoration: none;
@@ -364,8 +365,8 @@ p.right{
   width: 100%;
   font-size: 2.5rem;
   font-style: italic;
-  padding-right: 5rem;
-  margin-right: 1rem;
+  padding-right: 0rem;
+  margin-right: 0rem;
 }
 .historia-img-tres{
   width: 25rem;
@@ -756,4 +757,7 @@ li.bot a:hover:not(.active) {
   position: absolute;
   top: 2.1rem;
   right: -.2rem;
+}
+.overflow{
+  border: 3px solid red;
 }
