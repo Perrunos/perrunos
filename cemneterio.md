@@ -166,3 +166,38 @@
   <img src="images/perrunosamarillo.png" alt="  " class="historia-img-diez" >
   <img src="images/perrunosrosado.png" alt="  " class="historia-img-nueve" >
 </section>
+
+
+
+<div class="arrow-up" id="top"></div>
+<img src="images/perrunosazul.png" alt="Popular de polllo" id="historia-img-ocho" >
+<ul class="comida-uno">
+  <li><p>50% Proteina Animal <br>(carapacho de pollo, carne y grasa, en proporción 3:2:1) </p></li>
+  <li><p>25% Arroz</p></li>
+  <li><p>12.5% Zanahoria</p></li>
+  <li><p>12.5% Auyama </p></li>
+</ul>
+<img src="images/perrunosverde.png" alt="Ancestral Barf" id="historia-img-once" >
+<ul class="comida-dos">
+  <li><p> 76% Proteina Animal <br>(carne y grasa, proporción 4:1) </p></li>
+  <li><p> 1% Arroz</p></li>
+  <li><p> 12% Zanahoria</p></li>
+  <li><p> 11% Auyama </p></li>
+</ul>
+</div>
+<div id="franja-cuatro" class="recetas" data-aos="fade-right">
+<div class="arrow-up" id="bot"></div>
+<img src="images/perrunosamarillo.png" alt="Premium" id="historia-img-diez" >
+<ul class="comida-tres">
+  <li><p>70% Proteina Animal <br>(carne y grasa, proporción 4:1) </p></li>
+  <li><p>6.25% Arroz</p></li>
+  <li><p>12.25% Zanahoria</p></li>
+  <li><p>11.5% Auyama </p></li>
+</ul>
+<img src="images/perrunosrosado.png" alt="Casera" id="historia-img-nueve" >
+<ul class="comida-cuatro">
+  <li><p>50% Proteina Animal <br>(carne y grasa, proporción 4:1) </p></li>
+  <li><p>25% Arroz</p></li>
+  <li><p>12.5% Zanahoria</p></li>
+  <li><p>12.5% Auyama </p></li>
+</ul>

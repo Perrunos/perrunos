@@ -53,3 +53,13 @@ $('#historia-img-once').hover(function(e) {
 $('#hamburger').click(function(e){
   $('li.nav').toggleClass('showing');
 })
+
+const swiper = new Swiper('.swiper-container', {
+  direction: 'vertical',
+  mousewheel: {},
+  effect: 'cube',
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false
+  }
+});
