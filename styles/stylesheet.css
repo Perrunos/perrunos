@@ -32,32 +32,43 @@ p{
   font-size: 0.9rem;
 }
 /* LOADING -------------------------------------------------------------------- */
-#loadingimg{
-  width:18.75rem;
+#loading img{
+  width: 30rem;
   height: 18.75rem;
   margin-top: -9.4rem;
-  margin-left: -8.12rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  animation: loading 3s 0s infinite;
-  z-index: 9999;
-}
-@keyframes loading {
-   from {
-    transform: scaleX(-1);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-#loadingtext{
-  margin-top: 9.4rem;
-  margin-left: -9.4rem;
+  margin-left: -15rem;
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 9999;
+}
+.nose{
+  animation: nose 1s ease-in-out infinite both;
+}
+.right-ear{
+  animation: rightEar 3s linear 1s infinite;
+}
+.left-ear{
+  animation: leftEar 3s linear 1s infinite;
+}
+@keyframes leftEar{
+     0%{transform: rotate(-10deg);}
+    50%{transform: rotate(10deg)}
+    100%{transform: rotate(-10deg);}
+}
+@keyframes rightEar{
+     0%{transform: rotate(10deg);}
+    50%{transform: rotate(-10deg)}
+    100%{transform: rotate(10deg);}
+}
+
+@keyframes nose{
+     0%{transform: translateX(-5px)}
+    25%{transform: translateX(5px)}
+    50%{transform: translateX(-5px)}
+    75%{transform: translateX(0px)}
+   100%{transform: translateX(0px)}
+
 }
 /* NAV BAR -------------------------------------------------------------------- */
 nav.nav {
