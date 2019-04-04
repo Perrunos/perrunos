@@ -42,6 +42,18 @@ p{
   left: 50%;
   z-index: 9999;
 }
+#loading::before {
+  content: " ";
+  position: absolute;
+  top:0%;
+  left:50%;
+  width: 100%;
+  height: 100%;
+  margin-left: -50%;
+  background-color: rgb(255, 241, 208);
+  z-index: 9999;
+  padding: 0;
+}
 .nose{
   animation: nose 1s ease-in-out infinite both;
 }
@@ -77,7 +89,7 @@ nav.nav {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 ul.nav {
   background-color:  rgb(255, 241, 208);
@@ -148,6 +160,10 @@ h1{
   background-size: cover;
   background-position: 0  -3.125rem;
   position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 img.logo{
   color: white;
@@ -311,17 +327,17 @@ h2.historia-enfoque{
   animation: spin 7s infinite linear;
 }
 @-webkit-keyframes spin {
-    100% { -webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
 @-moz-keyframes spin {
-    100% { -moz-transform: rotate(360deg); }
+  100% { -moz-transform: rotate(360deg); }
 }
 @keyframes spin {
-    100% {
-        -moz-transform:rotate(360deg);
-        -o-transform:rotate(360deg);
-        transform:rotate(360deg);
-    }
+  100% {
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    transform:rotate(360deg);
+  }
 }
 /* HISTORIA DALMATA ----------------------------------------------------------- */
 .historia-img-cuatro{
@@ -358,15 +374,15 @@ p.right{
   animation: swinging 3.5s ease-in-out forwards infinite;
 }
 @-webkit-keyframes swinging{
-    0%{-webkit-transform: rotate(15deg);}
-    50%{-webkit-transform: rotate(-15deg)}
-    100%{-webkit-transform: rotate(15deg);}
+  0%{-webkit-transform: rotate(15deg);}
+  50%{-webkit-transform: rotate(-15deg)}
+  100%{-webkit-transform: rotate(15deg);}
 }
 
 @keyframes swinging{
-    0%{transform: rotate(15deg);}
-    50%{transform: rotate(-15deg)}
-    100%{transform: rotate(15deg);}
+  0%{transform: rotate(15deg);}
+  50%{transform: rotate(-15deg)}
+  100%{transform: rotate(15deg);}
 }
 p.left{
   width: 100%;
@@ -440,6 +456,7 @@ p.right{
   left: 65%;
   animation-delay: 1.6s;
 }
+
 .salt8{
   font-size: 2rem;
   left: 58%;
@@ -486,7 +503,7 @@ p.right{
   animation-delay: 2.4s;
 }
 .salt [class^="salt"]{
-  color: white;
+  color: gold;
   position: absolute;
   top: -25rem;
   animation-name: fallingSalt;
@@ -638,48 +655,48 @@ h2.foto-enfoque{
   width: 800px;
 }
 .container-general .gallery-wrap {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 70vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
 }
 .container-general .gallery-wrap .item {
-      color: transparent;
-      flex: 1;
-      height: 100%;
-      background-position: center;
-      background-size: 80%;
-      background-repeat: no-repeat;
-      transition: all 0.8s ease;
-      border: 3px solid white;
-      // transform: rotate(20deg);
+  color: transparent;
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  transition: all 0.8s ease;
+  border: 3px solid white;
+  // transform: rotate(20deg);
 }
 .container-general .gallery-wrap .item:hover {
-        flex: 7;
+  flex: 7;
 }
 .wrap-effect-2 .item:hover {
-      transform: translate3d(0, 0, 100px);
-      box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-      background-position: 50% 8rem;
-      background-size: 30%;
-      color: white;
-    }
+  transform: translate3d(0, 0, 100px);
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  background-position: 50% 8rem;
+  background-size: 30%;
+  color: white;
+}
 .wrap-effect-2   .item:first-of-type {
-      background-image: url(https://github.com/Perrunos/perrunos/blob/master/images/logoazul.png?raw=true);
-      background-color: #3b3b3b;
-    }
+  background-image: url(https://github.com/Perrunos/perrunos/blob/master/images/logoazul.png?raw=true);
+  background-color: #3b3b3b;
+}
 .wrap-effect-2   .item:nth-of-type(2) {
-      background-image: url(https://github.com/Perrunos/perrunos/blob/master/images/logoverde.png?raw=true);
-      background-color: #3b3b3b;
-    }
+  background-image: url(https://github.com/Perrunos/perrunos/blob/master/images/logoverde.png?raw=true);
+  background-color: #3b3b3b;
+}
  .wrap-effect-2   .item:nth-of-type(3) {
-      background-image: url(https://github.com/Perrunos/perrunos/blob/master/images/logoamarillo.png?raw=true);
-      background-color: #3b3b3b;
-    }
+  background-image: url(https://github.com/Perrunos/perrunos/blob/master/images/logoamarillo.png?raw=true);
+  background-color: #3b3b3b;
+}
  .wrap-effect-2  .item:last-of-type {
-      background-image: url(https://github.com/Perrunos/perrunos/blob/master/images/logorosado.png?raw=true);
-      background-color: #3b3b3b;
-    }
+  background-image: url(https://github.com/Perrunos/perrunos/blob/master/images/logorosado.png?raw=true);
+  background-color: #3b3b3b;
+}
 /* BOTONES -------------------------------------------------------------------- */
 ul.bot {
   list-style-type: none;
@@ -741,4 +758,101 @@ li.bot a:hover:not(.active) {
 }
 .overflow{
   border: 3px solid red;
+}
+/* PRODUCTOS ------------------------------------------------------------------ */
+/* BARF */
+.body-productos{
+ background-color: rgb(40, 155, 184);
+}
+.productos-main{
+  box-sizing: content-box;
+  width: 50%;
+  height: auto;
+  background-color: #383838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #383838;
+  margin: 10rem auto 2rem auto;
+  padding: 0rem;
+}
+#BARF {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 10;
+  color:white;
+  text-align: center;
+  font-family: Arial;
+  color: black;
+  font-weight: bold;
+  overflow: hidden;
+
+}
+#BARF .item{
+  position:relative;
+  z-index:10;
+  margin-top: 28rem;
+  margin-bottom: 1rem;
+}
+#BARF img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: auto;
+  padding-bottom: .5rem;
+  position:relative;
+  z-index:10;
+}
+h2.barf-title{
+  color: #a9db65;
+  font-size: 1.6rem;
+  transition: 1s;
+}
+#BARF div[class^='box']{
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: 2s;
+  padding-top: 0;
+  color: #383838;
+}
+#BARF div.box-one{
+  height: 75%;
+  background-color: #a9db65;
+  top:100%;
+  z-index: 4;
+  transition-delay: 2s;
+  padding-top: 3rem;
+}
+#BARF div.box-three{
+  height: 11.5%;
+  background-color:  #C0E48F;
+  top: 100%;
+  z-index: 3;
+  transition-delay: 3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#BARF div.box-four{
+  height: 9%;
+  background-color: #D0EBAB;
+  top:100%;
+  z-index: 2;
+  transition-delay: 4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#BARF div.box-two{
+  height: 5%;
+  background-color: #DFF1C7;
+  top:100%;
+  z-index: 1;
+  transition-delay: 5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

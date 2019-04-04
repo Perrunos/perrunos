@@ -93,3 +93,32 @@ for (let i = 0; i < imageGrid.length; i++){
   gridImage.setAttribute('data-aos', `${randMode}`);
   gridImage.setAttribute('data-aos-anchor-placement','center-center');
 };
+
+
+$('#historia-img-ocho').hover(function(e) {
+  $('.comida-uno').addClass('visible');
+})
+$('#historia-img-nueve').hover(function(e) {
+  $('.comida-cuatro').addClass('visible');
+})
+$('#historia-img-diez').hover(function(e) {
+  $('.comida-tres').addClass('visible');
+})
+$('#historia-img-once').hover(function(e) {
+  $('.comida-dos').addClass('visible');
+})
+
+
+$('#hamburger').click(function(e){
+  $('li.nav').toggleClass('showing');
+})
+
+const swiper = new Swiper('.swiper-container', {
+  direction: 'vertical',
+  mousewheel: {},
+  effect: 'cube',
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false
+  }
+});
